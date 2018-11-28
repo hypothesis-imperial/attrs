@@ -39,7 +39,6 @@ EXTRAS_REQUIRE = {
     "docs": ["sphinx", "zope.interface"],
     "tests": [
         "coverage",
-        "hypothesis",
         "pympler",
         "pytest",
         "six",
