@@ -121,6 +121,6 @@ if __name__ == "__main__":
         extras_require=EXTRAS_REQUIRE,
         include_package_data=True,
         dependency_links=[
-        "git+ssh://git@github.com/hypothesis-imperial/hypothesis.git@master"
+        "git+ssh://git@github.com/hypothesis-imperial/hypothesis.git@master#subdirectory=hypothesis-python"
         ]
     )
