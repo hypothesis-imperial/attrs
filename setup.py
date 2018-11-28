@@ -41,7 +41,6 @@ EXTRAS_REQUIRE = {
         "coverage",
         "pympler",
         "pytest",
-        "hypothesis",
         "six",
         "zope.interface",
     ],
@@ -122,5 +121,5 @@ if __name__ == "__main__":
         include_package_data=True,
         dependency_links=[
         "git+ssh://git@github.com/hypothesis-imperial/hypothesis.git@master#subdirectory=hypothesis-python"
-        ]
+        ] # This doesn't work
     )
