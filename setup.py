@@ -74,6 +74,7 @@ def find_meta(meta):
     meta_match = re.search(
         r"^__{meta}__ = ['\"]([^'\"]*)['\"]".format(meta=meta), META_FILE, re.M
     )
+
     if meta_match:
         return meta_match.group(1)
     raise RuntimeError("Unable to find __{meta}__ string.".format(meta=meta))
@@ -119,4 +120,7 @@ if __name__ == "__main__":
         install_requires=INSTALL_REQUIRES,
         extras_require=EXTRAS_REQUIRE,
         include_package_data=True,
+        dependency_links=[
+        "git+ssh://git@github.com/hypothesis-imperial/hypothesis.git@master"
+        ]
     )
